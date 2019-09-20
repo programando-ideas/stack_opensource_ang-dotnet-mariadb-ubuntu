@@ -1,0 +1,109 @@
+<div class="card p-0">
+    <div class="card-body">
+        <h5 class="card-title">Filtros</h5>
+        <div class="row">
+
+            <div class="col-md">
+                <div class="btn-group" dropdown>
+                    <button id="button-basic" dropdownToggle type="button" class="btn btn-primary dropdown-toggle"
+                        aria-controls="dropdown-basic">
+                        Año {{fanio_nombre}}<span class="caret"></span>
+                    </button>
+                    <ul id="dropdown-basic" *dropdownMenu class="dropdown-menu" role="menu"
+                        aria-labelledby="button-basic">
+                        <li *ngFor="let a of anios" role="menuitem">
+                            <a class="dropdown-item" (click)="onFiltroAnioClick(a)">{{a.nombre}}</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="col-md">
+                <div class="btn-group" dropdown>
+                    <button id="button-basic" dropdownToggle type="button" class="btn btn-primary dropdown-toggle"
+                        aria-controls="dropdown-basic">
+                        Marca {{fmarca_nombre}}<span class="caret"></span>
+                    </button>
+                    <ul id="dropdown-basic" *dropdownMenu class="dropdown-menu" role="menu"
+                        aria-labelledby="button-basic">
+                        <li *ngFor="let m of marcas" role="menuitem"><a class="dropdown-item"
+                                (click)="onFiltroMarcaClick(m)">{{m.nombre}}</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md">
+                <div class="btn-group" dropdown>
+                    <button id="button-basic" dropdownToggle type="button" class="btn btn-primary dropdown-toggle"
+                        aria-controls="dropdown-basic">
+                        Modelo {{fmodelo_nombre}}<span class="caret"></span>
+                    </button>
+                    <ul id="dropdown-basic" *dropdownMenu class="dropdown-menu" role="menu"
+                        aria-labelledby="button-basic">
+                        <li *ngFor="let mod of modelos" role="menuitem"><a class="dropdown-item"
+                                (click)="onFiltroModeloClick(mod)">{{mod.nombre}}</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md">
+                <div class="btn-group" dropdown>
+                    <button id="button-basic" dropdownToggle type="button" class="btn btn-primary dropdown-toggle"
+                        aria-controls="dropdown-basic">
+                        Versión {{fversion_nombre}}<span class="caret"></span>
+                    </button>
+                    <ul id="dropdown-basic" *dropdownMenu class="dropdown-menu" role="menu"
+                        aria-labelledby="button-basic">
+                        <li *ngFor="let ver of versiones" role="menuitem"><a class="dropdown-item"
+                                (click)="onFiltroVersionClick(ver)">{{ver.nombre}}</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-md">
+                <button type="button" class="btn btn-danger" (click)="limpiarFiltros()">Limpiar filtros</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Marca</th>
+                <th scope="col">Año</th>
+                <th scope="col">Modelo</th>
+                <th class="col-md-4" scope="col">Versi&oacute;n</th>
+                <th scope="col">Cantidad</th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let ve of vehiculos">
+                <th scope="row">{{ve.id}}</th>
+                <td>{{ve.anio.nombre}}</td>
+                <td>{{ve.marca.nombre}}</td>
+                <td>{{ve.modelo.nombre}}</td>
+                <td>{{ve.version.nombre}}</td>
+                <td class="text-center">{{ve.cantidad}}</td>
+                <td>
+                    <div class="btn-group col-md-12" role="group">
+                        <div class="col-md-4" style="box-sizing: content-box;">
+                            <button type="button" class="btn btn-primary btn-block" (click)="ingresarVehiculo(ve);">
+                                <fa-icon [icon]="faWarehouse"></fa-icon>
+                            </button>
+                        </div>
+                        <div class="col-md-4" style="box-sizing: content-box;">
+                            <button type="button" class="btn btn-success btn-block" (click)="venderVehiculo(ve)">
+                                <fa-icon [icon]="faDollarSign"></fa-icon>
+                            </button>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

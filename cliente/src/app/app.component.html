@@ -1,0 +1,50 @@
+<ngx-spinner bdColor="rgba(51, 51, 51, 0.8)" size="large" color="#fff" type="ball-clip-rotate">
+</ngx-spinner>
+
+<div *ngIf="!Authenticated" class="row">
+    <div class="col-xl-4 col-lg-3 col-md-3 col-sm-2 col-xs-1"></div>
+    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-8 col-xs-10">
+        <div class="col-lg-12">
+            <div style="margin-top: 10%;"></div>
+            <div class="card">
+                <div class="card-body">
+                    <!-- Login form -->
+                    <form [formGroup]="loginForm">
+                        <p class="h5 text-center mb-4">Login</p>
+
+                        <div class="md-form">
+                            <i class="fa fa-user prefix grey-text"></i>
+                            <input type="text" formControlName="usuario" id="usuario" class="form-control"
+                                data-success=" " data-error="Ingrese el usuario">
+                            <label for="usuario">Usuario</label>
+                        </div>
+
+                        <div class="md-form">
+                            <i class="fa fa-lock prefix grey-text"></i>
+                            <input type="password" formControlName="password" id="password" class="form-control"
+                                data-success=" " data-error="Contraseña incorrecta">
+                            <label for="password">Contraseña</label>
+                        </div>
+
+                        <div class="text-center">
+                            <button type="button" class="btn btn-primary"
+                                [disabled]="!loginForm.valid || isLoginProcessing"
+                                (click)="onSubmit(loginForm.value)">Ingresar</button>
+                        </div>
+                    </form>
+                    <!-- Login form -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-8 col-xs-10"></div>
+</div>
+
+<div *ngIf="Authenticated" class="row">
+    <div class="col-lg-2"></div>
+    <div class="col-lg-8">
+        <app-nav-menu></app-nav-menu>
+        <router-outlet></router-outlet>
+    </div>
+    <div class="col-lg-2"></div>
+</div>
