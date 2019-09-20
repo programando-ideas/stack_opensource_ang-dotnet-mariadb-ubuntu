@@ -11,11 +11,20 @@ Para ejecutar la aplicación deben instalarse los siguientes frameworks/herramie
  
 Una vez instaladas para ejecutar los proyectos:
  - API:
-    > cd servicios;
-    > dotnet run
+     - > cd servicios
+     - > dotnet run
  - Cliente:
-    > cd cliente;
-    > ng serve
+     - > cd cliente
+     - > ng serve
+    
+Comandos para creación de Controllers
+Instalar el comando: 
+ - > dotnet tool install -g dotnet-aspnet-codegenerator
+	  
+- > dotnet aspnet-codegenerator controller -name VehiculosController -outDir Controllers -m VehiculosStock -dc DbStockVehiculosContext -api -async -nv
+
+Crear el modelo en c# desde la base de datos
+ - > dotnet ef dbcontext scaffold "Server=localhost;Database=DbStockVehiculos;User=USUARIO;Password=PASSWORD!;" "Pomelo.EntityFrameworkCore.MySql" -o Repositorio/
 
 Licencias del software instalado:
  - Angular: https://angular.io/license
@@ -26,4 +35,4 @@ Licencias del software instalado:
  - Ubuntu: https://ubuntu.com/licensing
  - vsCode: https://github.com/microsoft/vscode/blob/master/LICENSE.txt
 
-v1.0.1 - 20/09/19
+v1.0.2 - 20/09/19
