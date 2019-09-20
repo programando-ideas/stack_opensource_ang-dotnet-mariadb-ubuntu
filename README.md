@@ -6,12 +6,15 @@ Para ejecutar la aplicación deben instalarse los siguientes frameworks/herramie
  - MariaDB Server: https://downloads.mariadb.org/mariadb/repositories/#distro=Ubuntu&distro_release=disco--ubuntu_disco&mirror=klaus&version=10.4
  - Angular: https://angular.io/guide/setup-local
  
+ Lista de videos:
+  - Primera parte: https://youtu.be/AOiksdi3SHM
+ 
 Una vez instaladas para ejecutar los proyectos:
  - API:
-    > cd servicios
+    > cd servicios;
     > dotnet run
  - Cliente:
-    > cd cliente
+    > cd cliente;
     > ng serve
 
 Licencias del software instalado:
@@ -23,4 +26,4 @@ Licencias del software instalado:
  - Ubuntu: https://ubuntu.com/licensing
  - vsCode: https://github.com/microsoft/vscode/blob/master/LICENSE.txt
 
-v1.0 - 20/09/19
+v1.0.1 - 20/09/19
