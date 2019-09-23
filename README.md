@@ -8,8 +8,10 @@ Para ejecutar la aplicación deben instalarse los siguientes frameworks/herramie
  
  Lista de videos:
   - Primera parte: https://youtu.be/AOiksdi3SHM
+  - Segunda parte: https://youtu.be/Z8A7nE__EXg
+  - Tercera parte: https://youtu.be/dMsqDVshQ2E
  
-Una vez instaladas para ejecutar los proyectos:
+Para ejecutar los proyectos servicios (webapi) y cliente (angular) hacer lo siguiente:
  - API:
      - > cd servicios
      - > dotnet run
@@ -35,4 +37,4 @@ Licencias del software instalado:
  - Ubuntu: https://ubuntu.com/licensing
  - vsCode: https://github.com/microsoft/vscode/blob/master/LICENSE.txt
 
-v1.0.2 - 20/09/19
+v1.1.0 - 23/09/19
