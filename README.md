@@ -7,9 +7,10 @@ Para ejecutar la aplicación deben instalarse los siguientes frameworks/herramie
  - Angular: https://angular.io/guide/setup-local
  
  Lista de videos:
-  - Primera parte: https://youtu.be/AOiksdi3SHM
-  - Segunda parte: https://youtu.be/Z8A7nE__EXg
-  - Tercera parte: https://youtu.be/dMsqDVshQ2E
+  - Parte 1  : https://youtu.be/AOiksdi3SHM
+  - Parte 2  : https://youtu.be/Z8A7nE__EXg
+  - Parte 3  : https://youtu.be/dMsqDVshQ2E
+  - Parte 3.1: https://youtu.be/If_maEd8H14
  
 Para ejecutar los proyectos servicios (webapi) y cliente (angular) hacer lo siguiente:
  - API:
@@ -36,5 +37,8 @@ Licencias del software instalado:
  - DBEaver: https://dbeaver.io/about/
  - Ubuntu: https://ubuntu.com/licensing
  - vsCode: https://github.com/microsoft/vscode/blob/master/LICENSE.txt
+ 
+Twitter: https://twitter.com/ProgramIdeas
+Facebook: https://www.facebook.com/ProgramandoIdeas01
 
-v1.1.0 - 23/09/19
+v1.1.1 - 24/09/19
