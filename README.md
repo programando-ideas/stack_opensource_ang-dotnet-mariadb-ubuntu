@@ -43,4 +43,6 @@ Facebook: https://www.facebook.com/ProgramandoIdeas01
 
 <a href="https://www.buymeacoffee.com/CFVh8qe" target="_blank"><img src="https://bmc-cdn.nyc3.digitaloceanspaces.com/BMC-button-images/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
 
+[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/W7W314DUU)
+
 v1.1.1 - 24/09/19
