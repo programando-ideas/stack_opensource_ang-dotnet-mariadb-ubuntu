@@ -206,6 +206,8 @@ export class HomeComponent implements OnInit {
   }
 
   venderVehiculo(ve: Vehiculo) {
+    if (ve.cantidad == 0)
+      return;
 
     this.spinner.show();
 
@@ -219,6 +221,7 @@ export class HomeComponent implements OnInit {
     this.postDatos<string>(recurso, vf).subscribe(data => {
 
       let vserv: any = data.body;
+      console.log("Cantidad: ", vserv.cantidad);
       if (vserv.cantidad >= 0)
         ve.cantidad -= 1;
 
