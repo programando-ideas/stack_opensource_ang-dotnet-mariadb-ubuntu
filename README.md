@@ -7,10 +7,11 @@ Para ejecutar la aplicación deben instalarse los siguientes frameworks/herramie
  - Angular: https://angular.io/guide/setup-local
  
  Lista de videos:
-  - Parte 1  : https://youtu.be/AOiksdi3SHM
-  - Parte 2  : https://youtu.be/Z8A7nE__EXg
-  - Parte 3  : https://youtu.be/dMsqDVshQ2E
-  - Parte 3.1: https://youtu.be/If_maEd8H14
+  - Parte 1: [Instalación y configuración](https://youtu.be/AOiksdi3SHM)
+  - Parte 2: [Base de datos y API](https://youtu.be/Z8A7nE__EXg)
+  - Parte 3: [Cliente Angular](https://youtu.be/dMsqDVshQ2E)
+  - Parte 3.1: [Cliente Angular y API asp.net core](https://youtu.be/If_maEd8H14)
+  - Parte 4: Cliente Angular y API node.js (Proximamente!!)
  
 Para ejecutar los proyectos servicios (webapi) y cliente (angular) hacer lo siguiente:
  - API:
