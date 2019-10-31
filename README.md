@@ -35,16 +35,16 @@ ASP.NET Core:
 
 Node.js/Express
 - Iniciar el proyecto:
-	npm init
+ - > npm init
 
 - Dependencias y paquetes:
-	npm install express --save
-	npm install --save-dev nodemon
-	npm install cors --save
-	npm install helmet --save
-	npm install morgan --save
-	npm install dotenv --save
-	npm install mariadb --save
+ - > npm install express --save
+ - > npm install --save-dev nodemon
+ - > npm install cors --save
+ - > npm install helmet --save
+ - > npm install morgan --save
+ - > npm install dotenv --save
+ - > npm install mariadb --save
 
 Licencias del software instalado:
  - Angular: https://angular.io/license
