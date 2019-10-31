@@ -64,4 +64,4 @@ Facebook: https://www.facebook.com/ProgramandoIdeas01
 
 [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/W7W314DUU)
 
-v1.1.1 - 24/09/19
+v1.2.0 - 31/10/19
