@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  urlapi: "https://localhost:5001/api/"
+  //urlapi: "https://localhost:5001/api/" //ASP.NET Core
+  urlapi: "http://localhost:3000/api/" //Node.js
 };
 
 /*

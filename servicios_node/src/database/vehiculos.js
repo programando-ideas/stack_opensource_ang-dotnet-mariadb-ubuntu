@@ -56,7 +56,8 @@ async function update(vehiculo) {
         console.log('Se actualiza vechiculo: ', vehiculo);
         const rows = await conn.query(`UPDATE VehiculosStock
                                        SET cantidad = ?
-                                       WHERE id = ?;`, [vehiculo.cantidad, vehiculo.id]);
+                                       WHERE id = ?;`, 
+                                       [vehiculo.cantidad, vehiculo.id]);
 
         conn.release();
 
