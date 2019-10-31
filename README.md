@@ -1,4 +1,4 @@
-# Stack de desarrollo OpenSource "ANGULAR + ASP.NET CORE + MARIADB SERVER + UBUNTU"
+# Stack de desarrollo OpenSource "ANGULAR + Node.js/Express + ASP.NET CORE + MARIADB SERVER + UBUNTU"
 
 Para ejecutar la aplicación deben instalarse los siguientes frameworks/herramientas
  - Ubuntu 19.04: http://releases.ubuntu.com/19.04/ubuntu-19.04-desktop-amd64.iso
@@ -11,24 +11,40 @@ Para ejecutar la aplicación deben instalarse los siguientes frameworks/herramie
   - Parte 2: [Base de datos y API](https://youtu.be/Z8A7nE__EXg)
   - Parte 3: [Cliente Angular](https://youtu.be/dMsqDVshQ2E)
   - Parte 3.1: [Cliente Angular y API asp.net core](https://youtu.be/If_maEd8H14)
-  - Parte 4: Cliente Angular y API node.js (Proximamente!!)
+  - Parte 4: [API node.js](https://youtu.be/t_xz2oZsf_s)
  
 Para ejecutar los proyectos servicios (webapi) y cliente (angular) hacer lo siguiente:
- - API:
+ - API asp.net core:
      - > cd servicios
+     - > dotnet restore
      - > dotnet run
+ - API Node.js/Express
+     - > npm install
+     - > npm start
  - Cliente:
      - > cd cliente
-     - > ng serve
+     - > ng serve -o
     
-Comandos para creación de Controllers
-Instalar el comando: 
+ASP.NET Core:
+- Comandos para creación de Controllers
  - > dotnet tool install -g dotnet-aspnet-codegenerator
-	  
-- > dotnet aspnet-codegenerator controller -name VehiculosController -outDir Controllers -m VehiculosStock -dc DbStockVehiculosContext -api -async -nv
+ - > dotnet aspnet-codegenerator controller -name VehiculosController -outDir Controllers -m VehiculosStock -dc DbStockVehiculosContext -api -async -nv
 
-Crear el modelo en c# desde la base de datos
+- Crear el modelo en c# desde la base de datos
  - > dotnet ef dbcontext scaffold "Server=localhost;Database=DbStockVehiculos;User=USUARIO;Password=PASSWORD!;" "Pomelo.EntityFrameworkCore.MySql" -o Repositorio/
+
+Node.js/Express
+- Iniciar el proyecto:
+	npm init
+
+- Dependencias y paquetes:
+	npm install express --save
+	npm install --save-dev nodemon
+	npm install cors --save
+	npm install helmet --save
+	npm install morgan --save
+	npm install dotenv --save
+	npm install mariadb --save
 
 Licencias del software instalado:
  - Angular: https://angular.io/license
