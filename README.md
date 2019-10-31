@@ -5,6 +5,8 @@ Para ejecutar la aplicación deben instalarse los siguientes frameworks/herramie
  - .Net core: https://dotnet.microsoft.com/download/linux-package-manager/ubuntu19-04/sdk-current
  - MariaDB Server: https://downloads.mariadb.org/mariadb/repositories/#distro=Ubuntu&distro_release=disco--ubuntu_disco&mirror=klaus&version=10.4
  - Angular: https://angular.io/guide/setup-local
+ - Node.js: https://nodejs.org/es/
+ - Express: https://expressjs.com/es/starter/installing.html
  
  Lista de videos:
   - Parte 1: [Instalación y configuración](https://youtu.be/AOiksdi3SHM)
