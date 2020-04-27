@@ -10,10 +10,10 @@ router.get('/anios', async function(req, res, next) {
 });
 
 router.get('/marcas', async function(req, res, next) {
-    var anios = await consultaDb.getMarcas();
+    var marcas = await consultaDb.getMarcas();
 
     res.setHeader('Content-Type', 'application/json');
-    res.send(JSON.stringify(anios, null, 4));
+    res.send(JSON.stringify(marcas, null, 4));
 });
 
 //ruta: modelos/{idmarca}/{idanio}
@@ -30,7 +30,7 @@ router.get('/modelos/:idmarca/:idanio', async function(req, res, next) {
 //ruta: versiones/{idmodelo}
 router.get('/versiones/:idmodelo', async function(req, res, next) {
     const idModelo = req.params.idmodelo;
-    
+
     var versiones = await consultaDb.getVersiones(idModelo);
 
     res.setHeader('Content-Type', 'application/json');
